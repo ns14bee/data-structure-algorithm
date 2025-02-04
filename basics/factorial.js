@@ -7,3 +7,11 @@ const factorial = (n) => {
 };
 console.log(factorial(5));
 console.log("bigO: O(n)");
+
+const factorialRec = (n) => {
+  if(n < 0) return 'invalid';
+  if(n === 0) return 1;
+  return n * factorialRec(n - 1);
+}
+console.log(factorialRec(4))
+console.log("bigO: O(n)");
